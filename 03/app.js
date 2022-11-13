@@ -76,7 +76,11 @@ books.getTranslator = function(isbn, lang) {
         return translator;
     }
 
-    return false;
+    if(translator === null) {
+        return false;
+    }
+
+    return null;
 }
 
 
